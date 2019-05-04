@@ -87,7 +87,7 @@ class Game extends React.Component {
     let nextHistory = preHistory.concat({
       squares: squares,
       xIsNext: nextStep%2 === 0,
-      winner: this.calculateWinner(squares,history.length)
+      winner: this.calculateWinner(squares,preHistory.length)
     });
 
     this.setState({
